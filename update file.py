@@ -1,4 +1,4 @@
-from playwright.sync_api import sync_playwright
+ from playwright.sync_api import sync_playwright
 
 
 def test_addition():
@@ -23,3 +23,5 @@ def test_addition():
         assert result == "30"
 
         browser.close()
+
+
