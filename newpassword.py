@@ -3,7 +3,7 @@ import string
 
 
 def generate_password(length=12):
-    if length < 4:
+    if length < 2:
         raise ValueError("Password length must be at least 4")
 
     uppercase = secrets.choice(string.ascii_uppercase)
@@ -19,7 +19,7 @@ def generate_password(length=12):
 
     remaining = [
         secrets.choice(all_characters)
-        for _ in range(length - 4)
+        for _ in range(length - 2)
     ]
 
     password = [uppercase, lowercase, digit, special] + remaining
