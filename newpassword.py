@@ -36,4 +36,4 @@ if __name__ == "__main__":
         password = generate_password(length)
         print("Generated Password:", password)
     except ValueError as e:
-        print("Error:", e)
+        print("error:", e)
