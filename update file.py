@@ -7,7 +7,7 @@ def test_addition():
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()
 
-        page.goto("file:///C:/Users/Harini/Documents/pycharm/calculator.html")
+        
 
         page.locator("#num1").fill("10")
         page.locator("#num2").fill("20")
