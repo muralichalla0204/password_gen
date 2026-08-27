@@ -22,7 +22,6 @@ def test_addition():
 
         assert result == "30"
 
-        browser.close()
+      
 
 
-#example 
